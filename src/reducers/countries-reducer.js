@@ -28,9 +28,10 @@ const countriesReducer = function (state = initialState, action) {
     case SET_CONTINENT:
       const continentCountries = state.countries.filter(country => country.continent === action.name);
       return Object.assign({}, state, {visibleCountries: continentCountries});
+    
+    default:
+      return state;
   }
-
-  return state;
 };
 
 export default countriesReducer;

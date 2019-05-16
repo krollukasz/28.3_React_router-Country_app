@@ -6,13 +6,13 @@ import { store } from './store';
 import { getCountries } from './actions/actions-countries';
 import routes from './routes';
 import * as serviceWorker from './serviceWorker';
-import DevTools from './DevTools';
+// import DevTools from './DevTools';
 
 render (
   <Provider store={store}>
     <div>
       <Router history={hashHistory} routes={routes} />
-      <DevTools />
+      {/* <DevTools /> */}
     </div>
   </Provider>,
 
